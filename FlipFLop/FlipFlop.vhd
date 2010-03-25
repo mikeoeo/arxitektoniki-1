@@ -18,5 +18,6 @@ ARCHITECTURE structural OF flipflop IS
 		Temp2	<=	(NOT Input) NAND Clock;
 		Q 		<= 	Temp1 NAND NQ;
 		NQ		<=	Temp2 NAND Q;
-		Output	<=	(Enable AND Q) OR (NOT Enable AND NQ);
+		--Output	<=	(Enable AND Q) OR (NOT Enable AND NQ);
+		Output	<=	Enable AND Q;
 END structural;
