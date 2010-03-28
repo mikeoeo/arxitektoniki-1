@@ -1,6 +1,8 @@
+-- Ntanasis Periklis A.M.:3070130 - Xatzipetros Mixail A.M.:3070175
+--Insertion of libraries
 LIBRARY IEEE;
 USE IEEE.STD_LOGIC_1164.ALL;
-
+--definition of a 16 bit adder
 ENTITY full_adder_x16 IS
 	PORT(
 		A_x16, B_x16:		IN 	STD_LOGIC_VECTOR(15 DOWNTO 0);
